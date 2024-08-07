@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع التبرعات</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>موقع التبرعات</h1>
+    </header>
+    <div class="container">
+        <h2>تبرع الآن لدعم قضيتنا</h2>
+        <form id="donation-form">
+            <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
+            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+            <input type="number" id="amount" name="amount" placeholder="المبلغ (بالدولار)" required>
+            <button type="submit">تبرع</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
